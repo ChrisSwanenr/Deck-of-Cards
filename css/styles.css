@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+li {
+
+}
+
+button{
+    display: block;
+    text-align: center;
+}
+body {
+  display: block;
+  text-align: center;
+}
+li {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    text-align: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 20s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
