@@ -17,7 +17,11 @@ h1 {
   }
 }
 }
-li {
+ol {
+  text-align: center;
+  list-style-position: inside;
+
+}
 
 }
 
@@ -32,7 +36,8 @@ body {
 li {
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-    text-align: left;
+    text-align: center;
+    list-style-position: inside;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 20s infinite linear;
