@@ -1,5 +1,21 @@
 h1 {
+  position: relative;
+  top: 65px;
+  color: red;
   text-align: center;
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+     opacity: 1;
+  }
+  to {
+     opacity: 0;
+  }
+}
 }
 li {
 
@@ -31,3 +47,31 @@ li {
       -webkit-filter: hue-rotate(360deg);
     }
 }
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 50%;
+}
+
+.view_port {
+  background-color: black;
+  height: 75px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 75px;
+}
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
